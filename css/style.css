@@ -1,0 +1,220 @@
+@charset "UFT-8";
+body{
+    font-family: 'karla', sans-serif;
+}
+header{
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 2%;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'karla', sans-serif;
+    margin-bottom: 2%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541);
+}
+
+main{
+    width: 80%;
+    margin: 2% auto;
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
+    padding: 4%;
+}
+
+#botao-cadas{
+    width: 15%;
+    height: 40px;
+    margin-bottom: 2%;
+    border: none;
+    background-color: rgb(50, 109, 218);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+#botao-cadas:hover{
+    background-color: rgb(10, 45, 94);
+}
+
+#cadastro-form{
+    display: none;
+    width: 90%;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
+    
+}
+
+#cadastro-form h3{
+    background-color: cornflowerblue;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2%;
+    font-weight: bolder;
+}
+
+.input{
+    width: 45%;
+    margin: 2% ;
+    height: 40px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
+}
+
+
+.botoes{
+    width: 10%;
+    height: 40px;
+    margin: 1%;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+#salvar{
+    background-color: #13CE66;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+#salvar:hover{
+    background-color: #075028;
+}
+
+#cancelar{
+    background-color: cornflowerblue;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+#cancelar:hover{
+    background-color: rgb(10, 36, 85);
+}
+
+#cabecalho{
+    width: 110%;
+    margin: 2%;
+}
+#cabecalho h2{
+    text-align: center;
+    padding: 1%;
+    font-size: 1.3em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    font-weight: bolder;
+    width: 15%;
+    background-color: #6495ed;
+}
+
+.dados{
+    width: 125%;
+    margin-left: 2%;
+}
+.dados h4{
+    text-align: center;
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    font-weight: bolder;
+    width: 15%;
+    
+}
+
+.dados .img{
+    cursor: pointer;
+    margin: 15px;
+    width: 1%;
+    position: relative;
+    left: 4%;
+    
+}
+
+@media (max-width: 768px){
+    .input{
+        width: 40%;
+        margin: 3% ;
+        height: 40px;
+        border: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
+    }
+    .botoes{
+        width: 15%;
+        height: 40px;
+        margin: 1%;
+        border: none;
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 450px){
+    #botao-cadas{
+        width: 25%;
+        height: 40px;
+        margin-bottom: 2%;
+        border: none;
+        background-color: rgb(50, 109, 218);
+        color: white;
+        font-weight: bold;
+        font-size: 0.8em;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
+
+    .botoes{
+        width: 30%;
+        height: 40px;
+        margin: 1%;
+        border: none;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    #cadastro-form{
+        display: none;
+        width: 90%;
+        margin: auto;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
+        
+    }
+
+    #cabecalho{
+        margin-top: 2%;
+    }
+
+    #cabecalho h2{
+        text-align: center;
+        padding: 1%;
+        height: 40px;
+        font-size: 0.8em;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Karla', sans-serif;
+        font-weight: bolder;
+        width: 15%;
+        background-color: #6495ed;
+    }
+    .dados{
+        width: 100%;
+        margin-left: 2%;
+    }
+    .dados h4{
+        text-align: center;
+        font-size: 0.8em;
+        display: inline-flex;
+        align-items: center;
+        font-family: 'Karla', sans-serif;
+        font-weight: bolder;
+        width: 18%;
+        
+    }
+    
+    .dados .img{
+        cursor: pointer;
+        margin: 8px;
+        width: 1%;       
+        
+    }
+}

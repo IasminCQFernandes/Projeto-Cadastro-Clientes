@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&amp;display=swap" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+    <main>
+        <div id="corpo">
+            <div id="cadastro-botao">
+                <button id="botao-cadas" onclick="cadastrar()">
+                    Cadastrar Cliente
+                </button>
+            </div>
+            <div id="cadastro-form">
+                <form action="">
+                    <h3>Novo Cliente</h3>
+
+                    <input type="text" id="inputName" class="input" placeholder="Nome do Cliente" required>
+
+                    <input type="email" id="inputEmail" class="input" placeholder="E-mail do Cliente" required>
+
+                    <input type="tel" id="inputTel" class="input" placeholder="Celular do Cliente" required>
+
+                    <input type="text" id="inputCity" class="input" placeholder="Cidade do Cliente" required>
+                
+                    <button id="salvar" class="botoes" onclick="salvo(event)" >Salvar</button>
+
+                    <button id="cancelar" class="botoes" onclick="cancel()">Cancelar</button>
+                </form>
+            </div>
+            
+        <div id="cabecalho">
+            <h2>Nome</h2>
+            <h2>Email</h2>
+            <h2>Celular</h2>
+            <h2>Cidade</h2>
+            <h2>Ações</h2>
+        </div>
+
+        <div class="dados">
+            <h4 id="dados-nome">Nome</h4>
+            <h4 id="dados-mail">Email</h4>
+            <h4 id="dados-tel">Celular</h4>
+            <h4 id="dados-city">Cidade</h4>
+            <h4 class="img"><img src="img/edit.png" alt="editar" onclick="edit()" id="editar"></h4>
+            <h4 class="img"><img src="img/remove.png" alt="remover" onclick="remove()" id="remove"></h4>
+        </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
